@@ -1,0 +1,31 @@
+name: frontend
+description: "Slovo AI - Интерактивно приложение за проверка на български език"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  
+  # Пакет за зареждане на .env файла с API ключа
+  flutter_dotenv: ^5.1.0
+  
+  # Официален пакет за интеграция с Gemini API
+  google_generative_ai: ^0.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Деклариране на .env файла като asset
+  assets:
+    - .env
