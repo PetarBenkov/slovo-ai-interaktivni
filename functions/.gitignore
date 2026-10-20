@@ -1,3 +1,7 @@
+node_modules/
+lib/
+serviceAccountKey.json
+*.log
 # Compiled JavaScript files
 lib/**/*.js
 lib/**/*.js.map
