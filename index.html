@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slovo AI - Интерактивна платформа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Горна лента (Header & Nav) -->
+    <header class="top-header">
+        <div class="logo">
+            <a href="#">ЛОГО</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Начало</a></li>
+                <li><a href="#articles">Статии</a></li>
+                <li><a href="#about">За нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основен контейнер с две колони -->
+    <div class="container">
+
+        <!-- 2. Ляв страничен панел (Sidebar) -->
+        <aside class="sidebar">
+            <h3>Предложени статии</h3>
+            <ul class="suggested-articles">
+                <li><a href="#">Статия 1</a></li>
+                <li><a href="#">Статия 2</a></li>
+                <li><a href="#">Статия 3</a></li>
+            </ul>
+        </aside>
+
+        <!-- 3. Основно съдържание / Чат зона (Main Content) -->
+        <main class="chat-section">
+            
+            <!-- Зона за съобщенията (Диалоговите балони) -->
+            <div class="chat-window">
+                
+                <!-- Съобщение отдясно (потребител) -->
+                <div class="message user-message">
+                    <p>Текст на първото съобщение от потребителя...</p>
+                </div>
+
+                <!-- Съобщение отвляво (асистент/система) -->
+                <div class="message bot-message">
+                    <p>Текст на отговора от системата...</p>
+                </div>
+
+                <!-- Още едно съобщение отдясно -->
+                <div class="message user-message short">
+                    <p>Кратко съобщение...</p>
+                </div>
+
+            </div>
+
+            <!-- Поле за въвеждане и изпращане най-долу -->
+            <div class="chat-input-bar">
+                <input type="text" placeholder="Задайте въпрос или въведете текст..." aria-label="Текстово поле">
+                <button type="submit" class="send-btn" aria-label="Изпрати">
+                    &#8593; <!-- Символ за стрелка нагоре ↑ -->
+                </button>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
